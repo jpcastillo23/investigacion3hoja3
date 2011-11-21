@@ -2,11 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyecto.pkg3;
+
 
 /**
  *
- * @author KeslerTran
+ * @author ennio
  */
 public class NombreTipo {
     private String argumento;
@@ -24,11 +24,23 @@ public class NombreTipo {
     public String getArgumento(){
         return this.argumento;
     }
+/**
+     * retorna un true si el argumento es 
+     * una CONSTANTE;(un valor numerico)
+     * retorna falso si es una funcion 
+     * @return 
+     */  
     public boolean getTipo(){
         return this.tipo;
     }
+    /**
+     * Metoro utilizado para que pormedio de iteradores mande a imprimir
+     * el objeto y muestre s contenido Interno.
+     * @return 
+     */
+    @Override
     public String toString(){
-        String hola = "Objeto tipo "+argumento +" es del tipo :"+tipo;
+        String hola = "Objeto tipo "+argumento +" es del tipo :"+tipo+"\n";
         return hola;
     }
 }
